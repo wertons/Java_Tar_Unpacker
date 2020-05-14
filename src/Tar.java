@@ -17,7 +17,7 @@ public class Tar {
     int fillSize;
     boolean foundAll = false;
     InputStream reader;
-    boolean loaded;
+    boolean loaded = false;
     boolean found = false;
 
     public static void main(String[] args) throws IOException {
@@ -117,7 +117,6 @@ public class Tar {
         } catch (IOException e) {
             System.out.println("File not found!");
         }
-        this.loaded = false;
     }
 
     //Extract the size of the current file by reading its header
