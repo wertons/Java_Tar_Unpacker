@@ -1,5 +1,3 @@
-import org.junit.Ignore;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,7 +6,7 @@ import java.util.Scanner;
 
 
 public class Tar {
-    List<TarFile> files = new ArrayList<TarFile>();
+    List<TarFile> files = new ArrayList<>();
     String filePath;
     byte[] fullFile;
     byte[] file;
@@ -69,7 +67,7 @@ public class Tar {
                                     System.out.println("What file do you want to extract");
                                     String[] listOut = loadedTar.list();
                                     System.out.println("----------------------------");
-                                    int i = 0;
+                                    int i;
                                     for (i = 0; i < listOut.length; i++) {
                                         System.out.println(i + 1 + "-" + listOut[i]);
                                     }
